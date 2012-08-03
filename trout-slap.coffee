@@ -10,6 +10,6 @@ module.exports = (robot) ->
   robot.respond /slap/i, (msg) ->
     msg.send "Hubot slaps undefined targets around a bit with a large trout"
 
-  robot.respond /slap (.*)/i, (msg) ->
+  robot.respond /slap (.+)/i, (msg) ->
     target = msg.match[1]
     msg.send "Hubot slaps #{target} around a bit with a large trout"
